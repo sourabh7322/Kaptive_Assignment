@@ -17,12 +17,12 @@ const Sidebar = () => {
           <svg className="bi pe-none me-2" width="40" height="32">
             <use xlinkHref="#bootstrap"></use>
           </svg>
-          <span className="fs-4">PLSE</span>
+          <h2 className="fs-10">PLSE</h2>
         </a>
 
         <ul className="nav nav-pills flex-column mb-auto">
           <li className="nav-item">
-            <a href="#" className="nav-link active" aria-current="page">
+            <a href="#" className="nav-link  text-white" aria-current="page">
               <svg className="bi pe-none me-2" width="16" height="16">
                 <use xlinkHref="#home"></use>
               </svg>
@@ -30,7 +30,7 @@ const Sidebar = () => {
             </a>
           </li>
           <li>
-            <a href="#" className="nav-link text-white">
+            <a href="#" className="nav-link  text-white">
               <svg className="bi pe-none me-2" width="16" height="16">
                 <use xlinkHref="#speedometer2"></use>
               </svg>
@@ -56,8 +56,8 @@ const Sidebar = () => {
         </ul>
         <hr />
         <div className="d-flex align-items-center text-white">
-          <div className="me-2" style={{ background: 'white', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <img src="https://github.com/mdo.png" alt="User" width="32" height="32" className="rounded-circle" />
+          <div className="me-2" style={{ background: 'white', borderRadius: '50%', width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <img src="https://picjj.com/images/2024/05/26/EWVEI.jpg" alt="User" width="60" height="60" className="rounded-circle" />
           </div>
           <div>
             <p className="mb-0">Sourabh Rawat</p>

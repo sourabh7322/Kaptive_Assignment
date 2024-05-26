@@ -1,13 +1,15 @@
 .sidebar-container {
-    width: 100vw;
+   
     height: 100vh;
     position: relative;
+   
   }
   
   .sidebar {
     width: 280px;
     height: 100%;
     transition: transform 0.3s ease;
+    background-color:#4459e8 !important
   }
   
   .hamburger-icon {
@@ -34,7 +36,8 @@
     }
   
     .hamburger-icon {
-        color: #02026f;
+        color: black;
       display: block;
     }
   }
+  

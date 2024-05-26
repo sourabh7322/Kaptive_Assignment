@@ -1,0 +1,74 @@
+/* src/components/ToggleButtonGroup.css */
+.toggle-button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .view-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .toggle-button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-button.active {
+    background-color: #e0e0ff;
+    color: #000;
+  }
+  
+  .toggle-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .currency-dropdown {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .toggle-button-group {
+      flex-direction: column;
+    }
+  
+    .view-buttons {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .currency-dropdown {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .toggle-button,
+    .dropdown {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  @media (max-width: 600px) {
+    .toggle-button-group{
+        display: none;
+    }
+  
+   
+  }
+  
