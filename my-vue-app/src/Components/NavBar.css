@@ -1,0 +1,59 @@
+/* src/components/NavBar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    overflow: hidden; /* Prevent content from overflowing */
+  }
+  
+  .left-nav,
+  .right-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  }
+  
+  .nav-button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .nav-input {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      display: none;
+    }
+    .left-nav,
+    .right-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+    .nav-button,
+    .nav-input {
+      width: calc(100% - 20px); /* Adjust for padding */
+      margin: 5px 0;
+    }
+  }
+  
