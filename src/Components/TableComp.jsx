@@ -1,9 +1,9 @@
 
 
-import data from "../data/Case Study _ Front End (Json).json";
+import axios from 'axios';
 import ReactPaginate from "react-paginate";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import './TableComp.css'
 import ToggleButtonGroup from "./ToggleButtonGroup";
 
@@ -11,6 +11,7 @@ const formatNumber = (num) => Math.floor(num);
 
 const TableComp = () => {
   const [currentPage, setCurrentPage] = useState(0);
+  const [data,setData] = useState([]);
   const itemsPerPage = 6;
 
   const handlePageClick = (event) => {
@@ -18,8 +19,21 @@ const TableComp = () => {
   };
 
   const offset = currentPage * itemsPerPage;
-  const currentPageData = data.Sheet1.slice(offset, offset + itemsPerPage);
-  const pageCount = Math.ceil(data.Sheet1.length / itemsPerPage);
+  const currentPageData = data.slice(offset, offset + itemsPerPage);
+  const pageCount = Math.ceil(data.length / itemsPerPage);
+
+  useEffect(()=>{
+    async function fetchData(){
+     try {
+      let fetchdata = await axios.get("https://kaptive-assignment-iuhw.onrender.com/Sheet1");
+      setData(fetchdata.data)
+      
+     } catch (error) {
+      console.log(error);
+     }
+    }
+    fetchData();
+  },[])
   return (
     <>
     <div className="d-flex justify-content-between mb-3">

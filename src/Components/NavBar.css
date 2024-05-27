@@ -8,6 +8,8 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
     font-size: 10px;
+    background-image: url("https://picjj.net/images/2024/05/27/EjqeH.png");
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
   }
   
   .left-nav,
